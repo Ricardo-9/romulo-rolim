@@ -10,10 +10,6 @@ export function Hero() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-8 lg:px-8">
         <div className="relative z-10 text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/25 bg-amber-500/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-amber-300">
-            <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
-            Odontologia de Alto Padrão
-          </span>
 
           <h1 className="mt-6 font-serif text-4xl font-semibold leading-[1.1] text-silver sm:text-5xl lg:text-6xl">
             Transformando Vidas Através de{' '}

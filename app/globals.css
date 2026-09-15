@@ -184,6 +184,7 @@
 
 .animate-marquee {
   animation: marquee-scroll 40s linear infinite;
+  will-change: transform;
 }
 
 .gold-text {
@@ -202,19 +203,20 @@
     radial-gradient(ellipse 60% 50% at 80% 120%, rgba(212, 175, 55, 0.06), transparent);
 }
 
-/* Monogram premium animations */
+/* Monogram premium animations com forçar de GPU */
 @keyframes monogram-float {
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-16px) rotate(-1.5deg);
+    transform: translateY(-12px) rotate(-1.5deg);
   }
 }
 
 .animate-monogram-float {
   animation: monogram-float 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes ring-spin {
@@ -228,10 +230,12 @@
 
 .animate-ring-spin {
   animation: ring-spin 22s linear infinite;
+  will-change: transform;
 }
 
 .animate-ring-spin-reverse {
   animation: ring-spin 30s linear infinite reverse;
+  will-change: transform;
 }
 
 @keyframes glow-pulse {
@@ -242,12 +246,13 @@
   }
   50% {
     opacity: 0.85;
-    transform: scale(1.08);
+    transform: scale(1.05);
   }
 }
 
 .animate-glow-pulse {
   animation: glow-pulse 5s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 @keyframes sheen-sweep {
@@ -269,14 +274,5 @@
 
 .animate-sheen {
   animation: sheen-sweep 6s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-monogram-float,
-  .animate-ring-spin,
-  .animate-ring-spin-reverse,
-  .animate-glow-pulse,
-  .animate-sheen {
-    animation: none;
-  }
+  will-change: transform, opacity;
 }
