@@ -38,8 +38,8 @@ export function Services() {
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-amber-500/15 to-transparent blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-amber-500/20">
               <Image
-                src="/images/hero-clinic.png"
-                alt="Interior de clínica odontológica de luxo com acabamento em mármore e dourado"
+                src="/images/teeth-comparison.jpg"
+                alt="Comparação de sorriso antes e depois com facetas dentárias brancas e polidas"
                 width={640}
                 height={760}
                 className="h-full w-full object-cover"

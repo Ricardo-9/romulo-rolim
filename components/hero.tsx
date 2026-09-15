@@ -87,13 +87,6 @@ export function Hero() {
             <div className="animate-ring-spin absolute inset-6 rounded-full border border-dashed border-amber-400/25" />
             <div className="animate-ring-spin-reverse absolute inset-14 rounded-full border border-amber-500/15" />
 
-            {/* Orbiting sparkle */}
-            <div className="animate-ring-spin absolute inset-0">
-              <span className="absolute left-1/2 top-0 -translate-x-1/2">
-                <Sparkles className="h-5 w-5 text-amber-300" aria-hidden="true" />
-              </span>
-            </div>
-
             {/* Monogram with floating + sheen sweep */}
             <div className="animate-monogram-float relative flex items-center justify-center">
               <div className="relative overflow-hidden drop-shadow-[0_20px_45px_rgba(212,175,55,0.25)]">
