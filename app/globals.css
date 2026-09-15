@@ -201,3 +201,82 @@
     ),
     radial-gradient(ellipse 60% 50% at 80% 120%, rgba(212, 175, 55, 0.06), transparent);
 }
+
+/* Monogram premium animations */
+@keyframes monogram-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-1.5deg);
+  }
+}
+
+.animate-monogram-float {
+  animation: monogram-float 6s ease-in-out infinite;
+}
+
+@keyframes ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-ring-spin {
+  animation: ring-spin 22s linear infinite;
+}
+
+.animate-ring-spin-reverse {
+  animation: ring-spin 30s linear infinite reverse;
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.08);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 5s ease-in-out infinite;
+}
+
+@keyframes sheen-sweep {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(220%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+.animate-sheen {
+  animation: sheen-sweep 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-monogram-float,
+  .animate-ring-spin,
+  .animate-ring-spin-reverse,
+  .animate-glow-pulse,
+  .animate-sheen {
+    animation: none;
+  }
+}

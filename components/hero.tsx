@@ -77,26 +77,46 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-amber-500/20 via-transparent to-amber-300/10 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-amber-500/20 shadow-2xl shadow-black/60">
-            <Image
-              src="/images/smile.png"
-              alt="Sorriso radiante resultado de tratamento odontológico premium"
-              width={720}
-              height={860}
-              priority
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0e] via-transparent to-transparent" />
-            <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-amber-500/20 bg-[#0d0d0e]/70 px-5 py-3 backdrop-blur-md">
-              <div>
+        <div className="relative flex items-center justify-center py-6 lg:py-0">
+          <div className="relative flex aspect-square w-full max-w-md items-center justify-center">
+            {/* Ambient glow */}
+            <div className="animate-glow-pulse absolute inset-8 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.35),transparent_65%)] blur-2xl" />
+
+            {/* Rotating gold rings */}
+            <div className="animate-ring-spin absolute inset-0 rounded-full border border-amber-500/20" />
+            <div className="animate-ring-spin absolute inset-6 rounded-full border border-dashed border-amber-400/25" />
+            <div className="animate-ring-spin-reverse absolute inset-14 rounded-full border border-amber-500/15" />
+
+            {/* Orbiting sparkle */}
+            <div className="animate-ring-spin absolute inset-0">
+              <span className="absolute left-1/2 top-0 -translate-x-1/2">
+                <Sparkles className="h-5 w-5 text-amber-300" aria-hidden="true" />
+              </span>
+            </div>
+
+            {/* Monogram with floating + sheen sweep */}
+            <div className="animate-monogram-float relative flex items-center justify-center">
+              <div className="relative overflow-hidden drop-shadow-[0_20px_45px_rgba(212,175,55,0.25)]">
+                <Image
+                  src="/images/rr-monogram.png"
+                  alt="Monograma RR de Rômulo Rolim Odontologia Integrada em ouro e prata"
+                  width={420}
+                  height={420}
+                  priority
+                  className="h-auto w-56 select-none sm:w-64 lg:w-72"
+                />
+                <div className="animate-sheen pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/55 to-transparent mix-blend-overlay" />
+              </div>
+            </div>
+
+            {/* Doctor badge */}
+            <div className="absolute -bottom-2 left-1/2 flex w-max -translate-x-1/2 items-center gap-3 rounded-2xl border border-amber-500/20 bg-[#0d0d0e]/80 px-5 py-3 backdrop-blur-md">
+              <div className="text-center">
                 <p className="font-serif text-sm text-silver">Dr. Rômulo Rolim</p>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-amber-400/80">
                   {CLINIC.cro}
                 </p>
               </div>
-              <Sparkles className="h-5 w-5 text-amber-400" aria-hidden="true" />
             </div>
           </div>
         </div>
