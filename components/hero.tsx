@@ -21,8 +21,7 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-silver/65 lg:mx-0 lg:text-lg">
-            Uma experiência odontológica que une técnica de excelência, tecnologia
-            de ponta e um cuidado profundamente humano. Cada sorriso é uma obra
+            Cada sorriso é uma obra
             projetada exclusivamente para você.
           </p>
 

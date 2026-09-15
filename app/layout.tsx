@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   description:
     'Odontologia de alto padrão em Barro - CE. Estética dental, reabilitação oral, implantes e ortodontia com atendimento humanizado e tecnologia avançada. Agende sua consulta.',
   generator: 'v0.app',
+  icons: {
+    icon: '/favicon.png', // ou '/icon.png' / '/favicon.svg'
+    shortcut: '/favicon.png',
+    apple: '/apple-touch-icon.png', // Opcional: ícone para quando salvar na tela inicial do iOS
+  },
   openGraph: {
     title: 'Rômulo Rolim — Odontologia Integrada',
     description:

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { MessageCircle, MapPin, ShieldCheck } from 'lucide-react'
 import { InstagramIcon } from '@/components/instagram-icon'
 import { WHATSAPP_URL, INSTAGRAM_URL, CLINIC } from '@/lib/site'
-
+import { AetherWatermark } from './AetherWatermark'
 export function SiteFooter() {
   const year = new Date().getFullYear()
 
@@ -98,6 +98,7 @@ export function SiteFooter() {
           </p>
         </div>
       </div>
+      <AetherWatermark color="currentColor" align="center" />
     </footer>
   )
 }
