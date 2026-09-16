@@ -1,33 +1,37 @@
-# romulo-rolim
+# Landing Page — Rômulo Rolim (Consultório Odontológico
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+> Interface web de alta conversão desenvolvida para o consultório Rômulo Rolim, focada em autoridade profissional, apresentação de especialidades e agendamento direto via WhatsApp.
 
-## Built with v0
+---
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Tecnologias Utilizadas
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_7U1fTV5oeO5fces7OUCknNmYbv7i)
+- **Framework:** Next.js / React
+- **Estilização:** Tailwind CSS
+- **Componentes:** Shadcn UI / Lucide Icons
+- **Hospedagem & Deploy:** Vercel
 
-## Getting Started
+---
 
-First, run the development server:
+## Identidade Visual & Especificações
+
+- **Cliente:** Dr. Rômulo Rolim CRO-CE 7366
+- **Localização:** R. Crisantina Monteiro, 100 - Centro, Barro - CE
+- **Conversão Principal:** Link direto para a API do WhatsApp com mensagem pré-formatada, além de uma vitrine moderna e sofisticada.
+
+---
+
+##  Como Executar o Projeto Localmente
 
 ```bash
+# Clone o repositório
+git clone https://github.com/Ricardo-9/romulo-rolim.git
+# Instale as dependências
+npm install
+
+# Execute o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## Desenvolvido por The Aether Labs - Ricardo Rocha Alves
